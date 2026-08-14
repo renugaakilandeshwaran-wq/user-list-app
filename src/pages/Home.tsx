@@ -5,8 +5,12 @@ Link
 export default function Home() {
     return (
         <>
-            <div className=' max-w-4xl mx-auto mt-25 lg:mt-40 lg:mb-65 mb-10 ' >
-                <div className="grid lg:grid-cols-3 gap-5 ">
+            <div className=' max-w-4xl mx-auto mt-25 lg:mt-30 lg:mb-65 mb-10  bg-pink-100 px-4 py-4' >
+
+                <header className="text-3xl mb-5 text-yellow-500 bg-white rounded-lg w-fit px-22 py-1 mx-auto text-center">FETCH API MINI  PROJECT</header>
+
+
+                <div className="grid lg:grid-cols-3 gap-5 mt-10">
                     <Link to="/users">
                         <div className="bg-blue-200 mx-auto text-orange-500 hover:text-green-500 flex items-center justify-center text-center text-4xl rounded-full shadow-lg w-52 h-52 ">
                             User List

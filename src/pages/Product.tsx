@@ -65,7 +65,7 @@ export default function Product() {
     return (
         <>
             <div className="mt-25 lg:mb-25   max-w-7xl mx-auto">
-                <h1 className="text-20xl text-center  font-bold">CRUD Operations </h1>
+                <h1 className="text-2xl uppercase text-center  font-bold">CRUD Operations </h1>
                 <div className="mt-4 ">
                     <div className="mx-auto text-center">
                         <button
@@ -115,9 +115,16 @@ export default function Product() {
                                         onChange={(e) => setCategory(e.target.value)}
                                         className="border px-2 py-2 rounded-lg"
                                     />
+                                    <input
+                                        type="text"
+                                        placeholder="image URL"
+                                        value={image}
+                                        onChange={(e) => setImage(e.target.value)}
+                                        className="border px-2 py-2 rounded-lg"
+                                    />
 
                                     <button
-                                        className={`px-4 py-2 rounded-lg text-white ${editId ? "bg-blue -500" : "bg-blue-500"
+                                        className={`px-4 py-2 rounded-lg text-white ${editId ? "bg-green-500" : "bg-blue-500"
                                             }`}
 
                                         onClick={editId ? handleUpdate : handleSubmit}
@@ -127,7 +134,7 @@ export default function Product() {
                                     <button
                                         onClick={() => setShowForm(false)}
                                     >
-                                        Cancel
+                                        close
                                     </button>
                                 </div>
 

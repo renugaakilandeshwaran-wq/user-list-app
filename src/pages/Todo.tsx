@@ -12,7 +12,7 @@ export default function Todo() {
     }, []);
     const fetchTodos = async () => {
         try {
-            const response = await axios.get("http://user-list-app-1.onrender.com/todos"
+            const response = await axios.get("https://user-list-app-1.onrender.com/todos"
             );
             setTodos(response.data);
 

@@ -19,7 +19,7 @@ function Users() {
         try {
             setLoading(true);
             const response = await axios.get
-                ("http://user-list-app-1.onrender.com/users");
+                ("https://user-list-app-1.onrender.com/users");
             setUsers(response.data);
 
         } catch (error) {

@@ -11,7 +11,7 @@ export default function UserDetails() {
         fetchUser();
     }, []);
     const fetchUser = async () => {
-        const response = await axios.get(`http://user-list-app-1.onrender.com/users/${id}`);
+        const response = await axios.get(`https://user-list-app-1.onrender.com/users/${id}`);
         setUser(response.data);
 
     };

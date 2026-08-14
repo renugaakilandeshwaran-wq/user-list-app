@@ -10,14 +10,16 @@ export default function Posts() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(true);
     const [search, setSearch] = useState("")
+
     useEffect(() => {
         fetchPost()
     }, []);
+
     const fetchPost = async () => {
         try {
             setLoading(true);
             const response = await axios.get
-                ("http://user-list-app-1.onrender.com/posts");
+                ("https://user-list-app-1.onrender.com/posts");
             setPost(response.data);
 
         } catch (error) {

@@ -16,7 +16,7 @@ export default function Product() {
     }, []);
 
     const fetchProducts = async () => {
-        const response = await axios.get("http://localhost:3000/products");
+        const response = await axios.get("http://user-list-app-1.onrender.com/products");
         setProducts(response.data);
     };
 
@@ -29,7 +29,7 @@ export default function Product() {
         };
 
         await axios.post(
-            "http://localhost:3000/products",
+            "http://user-list-app-1.onrender.com/products",
             newProduct
         );
 
@@ -37,14 +37,14 @@ export default function Product() {
     };
     const handleDelete = async (id: number) => {
         await axios.delete(
-            `http://localhost:3000/products/${id}`
+            `http://user-list-app-1.onrender.com/products/${id}`
         );
 
         fetchProducts();
     };
     const handleUpdate = async () => {
         await axios.put(
-            `http://localhost:3000/products/${editId}`,
+            `http://user-list-app-1.onrender.com/products/${editId}`,
             {
                 id: editId,
                 name,

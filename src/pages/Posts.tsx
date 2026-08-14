@@ -17,7 +17,7 @@ export default function Posts() {
         try {
             setLoading(true);
             const response = await axios.get
-                ("http://localhost:3000/posts");
+                ("http://user-list-app-1.onrender.com/posts");
             setPost(response.data);
 
         } catch (error) {

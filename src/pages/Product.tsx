@@ -134,7 +134,7 @@ export default function Product() {
                                     <button
                                         onClick={() => setShowForm(false)}
                                     >
-                                        close
+                                        Close
                                     </button>
                                 </div>
 

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 export default function Navbar() {
     return (
         <>
-            <nav className='lg:px-4 px-6 fixed top-0 w-full py-4 flex gap-2 lg:justify-between  bg-blue-900 text-white px- '>
+            <nav className='lg:px-4 px-6 fixed top-0 w-full py-4 flex gap-2  justify-between  bg-blue-900 text-white px- '>
                 <div className='items-center text-xs lg:text-xl py-1 flex px-2 bg-green-500  rounded-full'>
                     {/* (◡✿◡) */}
                     '◡' List
@@ -10,7 +10,7 @@ export default function Navbar() {
 
                 </div>
 
-                <div className=' flex gap-2 lg:justify-center lg:gap-10 items-center'>
+                <div className=' flex gap-2 lg:justify-center lg:gap-10 justify-between items-center'>
                     <NavLink to="/" className="lg:text-xl text-xs ">
                         Home
                     </NavLink>
